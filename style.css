@@ -97,3 +97,47 @@ p,li,a{font-size:1rem}
 
 /* Accessibility focus */
 a:focus, button:focus {outline:3px solid rgba(0,119,204,0.25);outline-offset:2px}
+
+/* style.css - Hope for Tomorrow (Part 3) */
+/* Basic reset */
+*{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{margin:0;padding:16px;background:#f7f7f7;color:#222}
+header, footer{padding:12px 0;text-align:center}
+a{color:#0b6b4b;text-decoration:none}
+
+/* ACCORDION */
+.accordion { margin-bottom: 1rem; max-width:800px; margin-left:auto;margin-right:auto;}
+.accordion-header{
+  background: #0b6b4b;color:#fff;padding:12px;cursor:pointer;border-radius:6px;margin-top:8px;
+}
+.accordion-header.active { box-shadow:0 2px 6px rgba(0,0,0,0.2) }
+.accordion-content { display:none;padding:10px;border-radius:6px;background:#fff;margin-top:6px;border:1px solid #e6e6e6 }
+.accordion-content.open { display:block; }
+
+/* GALLERY */
+.gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+.gallery-img{width:150px;height:100px;object-fit:cover;border-radius:6px;cursor:pointer;border:1px solid #ddd}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);justify-content:center;align-items:center;z-index:9999}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90%;max-height:85%;border-radius:6px}
+.close-lightbox{position:absolute;top:30px;right:40px;color:#fff;font-size:36px;cursor:pointer}
+
+/* PROGRAMS */
+.program-card{border:1px solid #e8e8e8;padding:12px;border-radius:8px;margin-bottom:10px;background:#fff}
+.program-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:12px}
+
+/* SEARCH */
+#searchInput{width:100%;padding:8px;margin-bottom:10px;border-radius:6px;border:1px solid #ccc;max-width:800px;display:block;margin-left:auto;margin-right:auto}
+
+/* FORM */
+form.needs-ajax input, form.needs-ajax select, form.needs-ajax textarea {
+  width:100%;padding:8px;margin-bottom:8px;border-radius:6px;border:1px solid #ccc;background:#fff;
+}
+.responseMsg{margin-top:8px;font-weight:600}
+
+/* layout */
+main{max-width:1000px;margin:16px auto;padding:12px;background:transparent}
+footer{margin-top:24px;color:#666}
+
+/* responsive */
+@media(max-width:600px){.gallery-img{width:48%;height:120px}}
