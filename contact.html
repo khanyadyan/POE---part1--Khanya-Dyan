@@ -20,3 +20,46 @@
     <p>Location: Cape Town, South Africa</p>
 </body>
 </html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact - Hope for Tomorrow</title>
+  <meta name="description" content="Contact Hope for Tomorrow for partnership, feedback, complaints or general enquiries.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Contact Hope for Tomorrow</h1></header>
+  <main>
+    <section>
+      <h2>Get in touch</h2>
+      <form id="contactForm" class="needs-ajax" novalidate>
+        <label for="c-name">Full name *</label>
+        <input id="c-name" name="name" type="text" required minlength="2">
+
+        <label for="c-email">Email *</label>
+        <input id="c-email" name="email" type="email" required>
+
+        <label for="c-type">Message Type *</label>
+        <select id="c-type" name="messageType" required>
+          <option value="">-- Select --</option>
+          <option value="general">General query</option>
+          <option value="feedback">Feedback</option>
+          <option value="complaint">Complaint</option>
+          <option value="partnership">Partnership request</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="c-message">Message *</label>
+        <textarea id="c-message" name="message" rows="6" required minlength="10"></textarea>
+
+        <button type="submit">Send Message</button>
+        <p class="responseMsg"></p>
+      </form>
+    </section>
+  </main>
+  <script src="website/scripts/main.js"></script>
+</body>
+</html>
