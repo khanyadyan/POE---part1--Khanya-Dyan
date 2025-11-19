@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enquiry - Hope for Tomorrow</title>
+  <meta name="description" content="Enquire about Hope for Tomorrow's education support, nutrition programme or mentorship opportunities.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Hope for Tomorrow — Enquiry</h1></header>
+  <main>
+    <section>
+      <h2>Make an Enquiry</h2>
+      <form id="enquiryForm" class="needs-ajax" novalidate>
+        <label for="name">Full name *</label>
+        <input id="name" name="name" type="text" required minlength="2">
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="enquiryType">Type of Enquiry *</label>
+        <select id="enquiryType" name="enquiryType" required>
+          <option value="">-- Select --</option>
+          <option value="request_info">Request information</option>
+          <option value="apply_support">Apply for support (education)</option>
+          <option value="nutrition_signup">Nutrition programme sign-up</option>
+          <option value="volunteer">Volunteer / Mentor sign-up</option>
+          <option value="sponsor">Sponsor / Partnership inquiry</option>
+          <option value="donation">General donation query</option>
+        </select>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+        <button type="submit">Send Enquiry</button>
+        <p class="responseMsg"></p>
+      </form>
+    </section>
+  </main>
+  <script src="website/scripts/main.js"></script>
+</body>
+</html>
