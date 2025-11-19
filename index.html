@@ -24,3 +24,70 @@
     <img src="classroom.jpg" alt="Children in a classroom" width="600">
 </body>
 </html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hope for Tomorrow — Empowering Children</title>
+  <meta name="description" content="Hope for Tomorrow empowers underprivileged children through education support, nutrition programmes and mentorship in our community.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="/images/hero.jpg" alt="Hope for Tomorrow hero" style="max-width:200px;">
+    <h1>Hope for Tomorrow</h1>
+    <p>Empowering underprivileged children with education, nutrition and mentorship.</p>
+  </header>
+
+  <main>
+    <section id="programs">
+      <h2>Programs</h2>
+      <input id="searchInput" placeholder="Search programs, e.g., 'nutrition'">
+
+      <div id="dynamicContent" class="program-list">
+        <!-- JS will inject program cards here -->
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Our Work</h2>
+      <div class="gallery">
+        <img src="/images/hero.jpg" data-large="/images/hero.jpg" class="gallery-img" alt="Program hero">
+      </div>
+
+      <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="Expanded image">
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQs</h2>
+      <div class="accordion">
+        <div class="accordion-header">How do I apply for support?</div>
+        <div class="accordion-content">
+          <p>Complete the enquiry form specifying 'Apply for support' and our team will contact you.</p>
+        </div>
+
+        <div class="accordion-header">Can I volunteer?</div>
+        <div class="accordion-content">
+          <p>Yes — choose 'Volunteer / Mentor sign-up' in the enquiry form.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <a href="/enquiry.html">Make an Enquiry</a> |
+      <a href="/contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Hope for Tomorrow</p>
+  </footer>
+
+  <script src="website/scripts/main.js"></script>
+</body>
+</html>
